@@ -20,6 +20,8 @@ return new class extends Migration
             $table->string('type');
             $table->decimal('balance')->default(0);
             $table->timestamps();
+
+            $table->primary('id');
         });
     }
 
